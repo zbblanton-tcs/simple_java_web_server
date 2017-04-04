@@ -26,7 +26,7 @@ public class App extends NanoHTTPD {
 
 	@Override
 	public Response serve(IHTTPSession session) {
-		String msg = "<html><head><title>Simple Web Server</title></head><body><h1 id='h1_id'>Simple Web Server is running.</h1><h3>Welcome</h3></body></html>\n";
+		String msg = "<html><head><title>Simple Web Server</title></head><body><h1 id='h1_id'>Simple Web Server is running.</h1><h3>Welcome!!!</h3></body></html>\n";
 		Map<String, String> parms = session.getParms();
 		if(parms.get("stop") != null){
 			System.out.println("\nClosing Web Server \n");
